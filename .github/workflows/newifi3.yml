@@ -11,11 +11,11 @@ name: newifi3 OpenWrt
 on:
   release:
     types: [published]
-  push:
-    branches:
-      - dev-19.07
-    paths:
-      - '.config'
+#  push:
+#    branches:
+#      - dev-19.07
+#    paths:
+#      - '.config'
   #schedule:
   #    - cron: 0 22 * * *
   watch:
@@ -28,7 +28,7 @@ env:
   DIY_SH: diy.sh
   FREE_UP_DISK: false
   SSH_ACTIONS: true
-  UPLOAD_BIN_DIR: false
+  UPLOAD_BIN_DIR: true
   UPLOAD_FIRMWARE: true
   TZ: Asia/Shanghai
 
